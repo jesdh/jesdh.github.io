@@ -1,0 +1,106 @@
+@charset "UTF-8";
+html {
+  background: #555555;
+}
+html,
+pre {
+  font-family: monospace;
+  font-size: 14pt;
+}
+body::after,
+a:focus::after {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #000000;
+  background: #aaaaaa;
+}
+body {
+  background: #000000;
+  color: #aaaaaa;
+  margin: 0 auto;
+  padding: 1ch 0;
+  max-width: 80ch;
+}
+@media only screen {
+  body::after {
+    bottom: 0;
+    right: 0ch;
+    max-width: 80ch;
+    content: "Viewing[SSL] <~jdeh>";
+  }
+}
+h1,
+h2 {
+	color: #55ff55;
+  font-weight: normal;
+  font-size: 100%;
+}
+h1 {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+em {
+  font-weight: normal;
+  font-style: normal;
+  color: #00aaaa;
+}
+a {
+  display: inline-block;
+  color: #5555ff;
+  text-decoration: underline transparent;
+  transition: text-decoration 0.3s ease;
+}
+a:visited {
+  color: #ffff55;
+}
+a:focus {
+  color: #000000;
+  background: #5555ff;
+}
+a:focus::after {
+  bottom: 0;
+  right: 10ch;
+  width: 70ch;
+  content: attr(href);
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 1;
+}
+a:focus::first-letter {
+  background: #aaaaaa;
+}
+a:hover {
+  text-decoration: underline currentcolor;
+}
+p {
+  margin: 1em 3ch;
+}
+pre {
+  margin: 1em 1ch;
+}
+pre.snippet {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+.lightblue {
+  color: #5555ff;
+}
+.yellow {
+	color: #ffff55;
+}
+.red {
+  color: #aa0000;
+}
+.magenta {
+	color: #aa00aa
+}
+.orange {
+	color: #ff5555;
+}
+.white {
+  color: #ffffff;
+}
