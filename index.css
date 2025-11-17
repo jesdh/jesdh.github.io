@@ -22,6 +22,7 @@ body {
   margin: 0 auto;
   padding: 1ch 0;
   max-width: 80ch;
+	font-size: 14pt;
 }
 @media only screen {
   body::after {
